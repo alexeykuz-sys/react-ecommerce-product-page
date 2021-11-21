@@ -1,5 +1,7 @@
 .cart {
     border: none;
     background-color: white;
-   cursor: pointer;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
 }

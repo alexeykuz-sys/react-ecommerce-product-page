@@ -1,0 +1,23 @@
+.cartbutton {
+    /* outline: none; */
+    background: none;
+    border: 0;
+    position: relative;
+}
+
+.carticon{
+    width: 100px;
+    height: 100px;
+}
+
+.badge {
+    position: absolute;
+    right: 4px;
+    font-size: 14px;
+    color: red;
+    background-color:var(--paleOrange);
+    width: 25px;
+    height: 15px;
+    border-radius: 40%;
+
+}

@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -39,6 +39,17 @@
     font-size: 18px;
 }
 
-.header img{
-    object-fit: contain;
+.avatarimage img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.avatarimage {
+    width:70px;
+    height: 70px;
+    position: relative;
 }

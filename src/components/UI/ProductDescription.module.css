@@ -1,0 +1,57 @@
+.description {
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 40px;
+    margin-top: 150px;
+}
+
+.textorange {
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.textheader {
+    color: var(--veryVarkBlue);
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-size: 25px;
+}
+
+.textdescription {
+    color: var(--darkGrayishBlue);
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.price {
+    color: var(--veryVarkBlue);
+    font-weight: 700;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.price::after {
+    content: '50%';
+    color: var(--orange);
+    margin: 20px;
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: var(--paleOrange);
+    font-size: 20px;
+}
+
+.fullprice {
+    color: var(--grayishBlue);
+    text-decoration: line-through;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}

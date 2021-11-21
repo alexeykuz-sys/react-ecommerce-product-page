@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
-import CartIcon from '../Cart/CartIcon';
 import avatarImage from '../../source/images/image-avatar.png'
 import classes from './Header.module.css'
+import HeaderCartButton from './HeaderCartButton';
 
 const Header = (props) =>{
 
@@ -16,8 +16,10 @@ const Header = (props) =>{
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <CartIcon/>
+                <HeaderCartButton/>
+                <div className={classes.avatarimage}>
                 <img src={avatarImage} alt='user face'/>
+                </div>
             </header>
         </Fragment>
     );
