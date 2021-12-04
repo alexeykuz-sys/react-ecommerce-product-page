@@ -3,12 +3,12 @@ import classes from './HeaderCartButton.module.css';
 
 const HeaderCartButton = ()=>{
     return (
-        <button className={classes.cartbutton}>
+        <div className={classes.cartbutton}>
             <span className={classes.carticon}>
                 <CartIcon/>
             </span>
             <span className={classes.badge}>3</span>
-        </button>
+        </div>
     );
 }
 

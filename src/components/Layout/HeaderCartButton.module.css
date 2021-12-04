@@ -3,6 +3,8 @@
     background: none;
     border: 0;
     position: relative;
+    padding-left: 40px;
+    padding-right: 5px;
 }
 
 .carticon{
