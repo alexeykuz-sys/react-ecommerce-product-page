@@ -1,3 +1,4 @@
+import Input from './Input';
 import classes from './ProductDescription.module.css';
 
 const ProductDescription = () => {
@@ -9,8 +10,18 @@ const ProductDescription = () => {
                 wear companion. Featuring a durable rubber outer sole,
                 they'll withstand everything the weather can offer.
             </div>
-            <div className={classes.price}>$125.00</div>
-            <div className={classes.fullprice}>$250</div>
+            <div className={classes.pricewrapper}>
+                <div className={classes.price}>$125.00</div>
+                <div className={classes.fullprice}>$250</div>
+            </div>
+            <Input label='Amount' input={{
+                id: 'amount',
+                type: 'number',
+                min: 0,
+                max: 10,
+                step:1,
+                defaultValue:0,
+            }}/>
         </div>
     );
 }

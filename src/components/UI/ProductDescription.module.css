@@ -1,9 +1,8 @@
 .description {
     position: relative;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    float: right;
     padding: 40px;
     margin-top: 150px;
 }
@@ -31,21 +30,34 @@
     padding-top: 10px;
 }
 
+.pricewrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .price {
     color: var(--veryVarkBlue);
     font-weight: 700;
     font-size: 35px;
-    padding-top: 10px;
+    display: block;
+    padding-right: 120px;
+    /* padding-top: 10px; */
+    /* align-self: center; */
 }
 
 .price::after {
     content: '50%';
     color: var(--orange);
-    margin: 20px;
-    padding: 10px ;
+    /* position: fixed; */
+    padding: 5px;
+    margin-left: 5px;
+    
     border-radius: 10px;
     background-color: var(--paleOrange);
     font-size: 20px;
+    
 }
 
 .fullprice {
@@ -54,4 +66,18 @@
     margin-top: 10px;
     font-size: 20px;
     font-weight: 500;
+    /* padding:0px 0px 10px 50px; */
+}
+
+
+@media (min-width: 768px) {
+    .description {
+        position: relative;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        float: right;
+        padding: 40px;
+        margin-top: 150px;
+    }
 }

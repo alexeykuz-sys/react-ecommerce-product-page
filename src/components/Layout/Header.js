@@ -6,19 +6,12 @@ import HeaderCartButton from './HeaderCartButton';
 
 
 
-const Header = () =>{
-    
-
-    const cartHandler = () =>{
-        console.log('clock')
-        
-    }
+const Header = (props) =>{
 
     return (
         <Fragment>
             <header className={classes.header}>
                 <Hamburger/>
-                
                 <h1 className={classes.logo}>Sneakers</h1>
                 <ul className={classes.menu}>
                     <li>Collections</li>
@@ -27,7 +20,7 @@ const Header = () =>{
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <HeaderCartButton onclick={cartHandler}/>
+                <HeaderCartButton onclick={props.onShowCart}/>
                 <div className={classes.avatarimage}>
                 <img src={avatarImage} alt='user face'/>
                 </div>

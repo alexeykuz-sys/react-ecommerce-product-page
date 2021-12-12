@@ -1,0 +1,45 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: var(--lightGrayishBlue);
+    margin: 20px 0 20px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.input [type=number]{
+    width: 100%;
+    border: none;
+    text-align: center;
+    background-color: var(--lightGrayishBlue);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.input label {
+    display: none;
+}
+
+.input #amount {
+    width: auto;
+}
+
+.input img {
+    width: 21px;
+    height: 9px;
+}
+
+
+@media (min-width: 768px) {
+    .inputWrapper {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,14 @@
+
+.button {
+    padding: 10px 50px;
+    background-color: var(--orange);
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+
+}

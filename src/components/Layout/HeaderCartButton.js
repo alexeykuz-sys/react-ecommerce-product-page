@@ -1,14 +1,14 @@
 import CartIcon from "../Cart/CartIcon";
 import classes from './HeaderCartButton.module.css';
 
-const HeaderCartButton = ()=>{
+const HeaderCartButton = (props)=>{
     return (
-        <div className={classes.cartbutton}>
+        <button className={classes.cartbutton} onClick={props.onClick}>
             <span className={classes.carticon}>
-                <CartIcon/>
+                <CartIcon />
             </span>
             <span className={classes.badge}>3</span>
-        </div>
+        </button>
     );
 }
 
