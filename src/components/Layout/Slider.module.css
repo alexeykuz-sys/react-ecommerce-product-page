@@ -1,0 +1,31 @@
+/* .imagecontainter{
+    width: 375px;
+    height: 50%;
+    border: 2px solid red;
+} */
+
+.productimage{
+    width: 100%;
+}
+
+.previous,
+.next {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 35%;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous {
+    left: 25px;
+}
+
+.next {
+    right: 25px;
+}

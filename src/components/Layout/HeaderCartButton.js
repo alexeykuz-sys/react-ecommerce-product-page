@@ -4,9 +4,9 @@ import classes from './HeaderCartButton.module.css';
 const HeaderCartButton = (props)=>{
     return (
         <button className={classes.cartbutton} onClick={props.onClick}>
-            <span className={classes.carticon}>
                 <CartIcon />
-            </span>
+            {/* <span className={classes.carticon}>
+            </span> */}
             <span className={classes.badge}>3</span>
         </button>
     );

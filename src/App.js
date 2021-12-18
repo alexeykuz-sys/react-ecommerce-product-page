@@ -2,8 +2,11 @@ import { Fragment, useState } from 'react';
 import Header from './components/Layout/Header';
 import Cart from './components/Cart/Cart';
 
-import './App.css';
+import classes from './App.module.css';
 import ProductDescription from './components/UI/ProductDescription';
+import Slider from './components/Layout/Slider';
+import Image from './components/Layout/Image';
+import SliderData from './components/Layout/SliderData';
 
 function App() {
 
@@ -11,20 +14,24 @@ function App() {
 
   const showCartHandler =()=>{
     setCartIsShown(true);
-    console.log('fdgdf')
-
-  }
+  };
 
   const hideCartHandler =()=>{
     setCartIsShown(false);
 
-  }
+  };
 
   return (
     <Fragment>
       {CartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler}/>
+      <Header onOpen={showCartHandler}/>
       <main>
+        <div className={classes.slider}>
+        <Slider slides={SliderData} />
+        </div>
+        <div className={classes.image}  >
+        <Image />
+        </div>
         <ProductDescription/>
       </main>
     </Fragment>
