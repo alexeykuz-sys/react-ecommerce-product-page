@@ -1,0 +1,7 @@
+.imagewrapper{
+    width: 50%;
+    height: 100%;
+    border: 2px solid firebrick;
+    display: flex;
+    flex-direction: row;
+}

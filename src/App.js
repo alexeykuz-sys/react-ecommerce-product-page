@@ -29,10 +29,12 @@ function App() {
         <div className={classes.slider}>
         <Slider slides={SliderData} />
         </div>
-        <div className={classes.image}  >
-        <Image />
-        </div>
-        <ProductDescription/>
+        <section className={classes.productwrapper}>
+          <div className={classes.image}  >
+          <Image thumbnails={SliderData}/>
+          </div>
+          <ProductDescription/>
+        </section>
       </main>
     </Fragment>
   );

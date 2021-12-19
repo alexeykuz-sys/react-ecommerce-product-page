@@ -1,4 +1,6 @@
 .description {
+    display: flex;
+    flex: 1;
     position: relative;
     flex-direction: column;
     width: 100%;
@@ -78,6 +80,6 @@
         height: 100%;
         float: right;
         padding: 40px;
-        margin-top: 150px;
+        margin-top: 0px;
     }
 }
