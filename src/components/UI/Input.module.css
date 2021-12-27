@@ -10,8 +10,9 @@
     border-radius: 15px;
     background-color: var(--lightGrayishBlue);
     margin: 20px 0 20px 0;
-    width: 100%;
+    width: auto;
     align-items: center;
+    cursor: pointer;
 }
 
 .input [type=number]{
@@ -32,14 +33,24 @@
     width: auto;
 }
 
-.input img {
-    width: 21px;
-    height: 9px;
-}
 
 
 @media (min-width: 768px) {
     .inputWrapper {
         flex-direction: row;
+        height: 100px;
     }
+    
+.input{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: var(--lightGrayishBlue);
+    /* margin: 20px 0 20px 0; */
+    width: 50%;
+    align-items: center;
+    margin-right: 20px;
+}
+
 }

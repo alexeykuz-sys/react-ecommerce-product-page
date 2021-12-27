@@ -11,6 +11,8 @@ const Slider = (props)=>{
 
     const length = props.slides.length;
 
+    console.log('L',length, 'C', current)
+
     const prevSlide = ()=>{
         setCurrent(current === 0 ? length -1 : current -1)
 
@@ -27,7 +29,7 @@ const Slider = (props)=>{
 
     const slides = SliderData.map((slide, index) => { return (
         <div className={index === current ? 'classes.slideactive' : 'classes.slide'}>
-            {index === current && (<img src={slide.image}  className={classes.productimage} alt='product images'/>
+            {index === current && (<img src={slide.image}  className={classes.productimage} alt='product images' />
 )}
         </div>
         

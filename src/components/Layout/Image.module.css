@@ -1,7 +1,24 @@
 .imagewrapper{
     width: 50%;
     height: 100%;
-    border: 2px solid firebrick;
     display: flex;
     flex-direction: row;
+}
+.thumbnaillist {
+    display: flex;
+    flex: 1;
+    width: auto;
+    list-style: none;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thumbnaillist li img{
+    min-width: 79px;
+    min-height: 79px;
+    border-radius: 10px;
+    flex: 1;
+    width: 98%;
+    height: 98%;
 }

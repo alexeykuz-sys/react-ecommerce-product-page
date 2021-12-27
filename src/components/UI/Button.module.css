@@ -1,8 +1,8 @@
 
 .button {
-    padding: 10px 50px;
+    padding: 15px 50px;
     background-color: var(--orange);
-    width: 90%;
+    width: auto;
     border-radius: 10px;
     border: none;
     display: flex;
@@ -10,5 +10,14 @@
     align-items: center;
     justify-content: center;
     color: var(--white);
+    cursor: pointer;
+}
 
+
+@media (min-width: 768px) {
+    .button {
+        margin: 20px 0;
+        padding: 0;
+        width: 50%;
+    }
 }

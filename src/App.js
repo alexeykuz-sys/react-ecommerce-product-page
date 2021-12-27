@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Layout/Header';
 import Cart from './components/Cart/Cart';
 
@@ -7,6 +7,7 @@ import ProductDescription from './components/UI/ProductDescription';
 import Slider from './components/Layout/Slider';
 import Image from './components/Layout/Image';
 import SliderData from './components/Layout/SliderData';
+import CartProvider from './store/CartProvider';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
   };
 
   return (
-    <Fragment>
+    <CartProvider>
       {CartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onOpen={showCartHandler}/>
       <main>
@@ -36,7 +37,7 @@ function App() {
           <ProductDescription/>
         </section>
       </main>
-    </Fragment>
+    </CartProvider>
   );
 }
 
