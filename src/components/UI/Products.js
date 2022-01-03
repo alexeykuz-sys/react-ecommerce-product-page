@@ -8,8 +8,9 @@ const DUMMY_PRODUCTS = [
         company:'Sneaker Company',
         name: 'Fall Limited Edition Sneakers',
         description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
-        price: 125.00
-    },
+        price: 125.00,
+        fullprice:250.00
+    }
     
 ];
 
@@ -23,12 +24,14 @@ const Products = () => {
     company= {product.company}
     product={product.name} 
     description={product.description} 
-    price={product.price}/>);
+    price={product.price}
+    fullprice={product.fullprice}
+    />);
 
     return (
-        <section >
+        
             <ul className={classes.description}>{productsList}</ul>
-        </section>
+        
     )
 
 };

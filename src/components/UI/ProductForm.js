@@ -38,7 +38,7 @@ const ProductForm = (props) => {
                     defaultValue:0,
                 }}/>
                 <Button><CartIcon/>Add to Cart</Button>
-                {!amountIsValid && <p>Please enter valid amount</p>}
+                {!amountIsValid && <p>Please enter valid amount 1 to 10</p>}
             </form>
     );
 }
