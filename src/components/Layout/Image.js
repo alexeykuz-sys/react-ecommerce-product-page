@@ -7,17 +7,16 @@ const Image = (props) => {
     const [current, setCurrent] = useState(0);
 
     const length = props.thumbnails.length;
-
     console.log('L',length, 'C', current)
     const currentImage = ()=>{
+        setCurrent(current? 0:length-1)
         console.log(current)
 
     };
-
+    console.log(Array(props.thumbnails).forEach(x=>x))
     if(!Array.isArray(props.thumbnails) || props.thumbnails.length<=0){
         return null;
     }
-    console.log(Array(props.thumbnails[current].image))
 
     const thumbnails = SliderData.map((thumbnail, index) => { return (
         <li className={index===current ? 'classes.slideactive' : 'classes.slide'} >

@@ -25,7 +25,7 @@ function App() {
   return (
     <CartProvider>
       {CartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onOpen={showCartHandler}/>
+      <Header onShowCart={showCartHandler}/>
       <main>
         <div className={classes.slider}>
         <Slider slides={SliderData} />
