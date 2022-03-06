@@ -8,26 +8,28 @@ const Image = (props) => {
 
     const length = props.thumbnails.length;
     console.log('L',length, 'C', current)
-    const currentImage = ()=>{
-        setCurrent(current? 0:length-1)
-        console.log(current)
+    
+    const currentImage = (e, SliderData ) => {
+        setCurrent(e.target)
+        console.log(SliderData)
+        
 
     };
-    console.log(Array(props.thumbnails).forEach(x=>x))
+
     if(!Array.isArray(props.thumbnails) || props.thumbnails.length<=0){
         return null;
     }
 
-    const thumbnails = SliderData.map((thumbnail, index) => { return (
-        <li className={index===current ? 'classes.slideactive' : 'classes.slide'} >
+    const thumbnails = SliderData.map((thumbnail, i) => { return (
+        <li className={i ? 'classes.slideactive' : 'classes.slide'} key={thumbnail.thumbnail} onClick={currentImage}>
             
-            {<img src={thumbnail.thumbnail}  className={classes.thumbnailimage}  alt='thumbnail images' onClick={currentImage} key={index}/>
+            {<img src={thumbnail.thumbnail}  className={classes.thumbnailimage} index={i}    alt='thumbnail images'  />
             }
         </li>
         )
     })
-    console.log('CURRENT', current)
-    console.log(thumbnails)
+    // console.log(SliderData[current])
+    // console.log('CURRENT', current)
 
     return(
         <Fragment className={classes.imagewrapper}>

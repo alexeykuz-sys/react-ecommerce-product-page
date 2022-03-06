@@ -11,7 +11,6 @@ const Slider = (props)=>{
 
     const length = props.slides.length;
 
-    console.log('L',length, 'C', current)
 
     const prevSlide = ()=>{
         setCurrent(current === 0 ? length -1 : current -1)
@@ -19,7 +18,7 @@ const Slider = (props)=>{
     };
 
     const nextSlide = () =>{
-        setCurrent(current === length-1? 0 : current + 1)
+        setCurrent(current === length-1 ? 0 : current + 1)
     };
 
 

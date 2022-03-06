@@ -13,7 +13,7 @@ const Product = (props)=>{
         cartCtx.addItem({
             id: props.id,
             // id props will come fomr products component
-            name: props.name,
+            name: props.product,
             amount: amount ,
             price: props.price,
         })

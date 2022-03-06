@@ -16,24 +16,21 @@ const DUMMY_PRODUCTS = [
 
 
 const Products = () => {
-
+    
     const productsList = DUMMY_PRODUCTS.map(product =>
-    <Product
-    id={product.id} 
-    key={product.id}
-    company= {product.company}
-    product={product.name} 
-    description={product.description} 
-    price={product.price}
-    fullprice={product.fullprice}
-    />);
-
-    return (
-        
-            <ul className={classes.description}>{productsList}</ul>
-        
-    )
-
+        <Product
+        id={product.id} 
+        key={product.id}
+        company= {product.company}
+        product={product.name} 
+        description={product.description} 
+        price={product.price}
+        fullprice={product.fullprice}
+        />);
+    return (        
+        <ul className={classes.description}>{productsList}</ul>    
+        )
+            
 };
 
 export default Products;

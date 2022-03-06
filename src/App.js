@@ -9,7 +9,7 @@ import Image from './components/Layout/Image';
 import SliderData from './components/Layout/SliderData';
 import CartProvider from './store/CartProvider';
 
-function App() {
+function App(index) {
 
   const [CartIsShown, setCartIsShown] = useState(false);
 
@@ -32,7 +32,7 @@ function App() {
         </div>
         <section className={classes.productwrapper}>
           <div className={classes.image}  >
-          <Image thumbnails={SliderData}/>
+          <Image thumbnails={SliderData} data-index={index} images={SliderData.image}/>
           </div>
           <ProductDescription/>
         </section>

@@ -8,6 +8,7 @@
   }
   
   .cart-item h2 {
+    font-size: 25px;
     margin: 0 0 0.5rem 0;
     color: #363636;
   }
@@ -30,6 +31,7 @@
     padding: 0.25rem 0.75rem;
     border-radius: 6px;
     color: #363636;
+    font-size: 15px;
   }
   
   .actions {

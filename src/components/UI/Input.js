@@ -11,9 +11,11 @@ const Input = React.forwardRef((props, ref) => {
     <div className={classes.inputWrapper}>
         <div className={classes.input}>
             <label htmlFor={props.input.id}>{props.label}</label>
-            <img src={minusSign} alt='minus sign'/>
+            {/* <img src={minusSign} alt='minus sign'/> */}
+            <button onClick={props.onRemove}>−</button>
             <input ref={ref} {...props.input}/>
-            <img src={plusSign} alt='plus sign'/>
+            <button onClick={props.onAdd}>+</button>
+            {/* <img src={plusSign} alt='plus sign'/> */}
         </div>
     </div>
     );

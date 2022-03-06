@@ -11,10 +11,15 @@ const Cart = (props) =>{
 
     const cartCtx = useContext(CartContext);
 
-    const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+    // const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
     const hasItems = cartCtx.items.length > 0;
 
-    const cartItemRemoveHandler = id =>{}
+    const cartItemRemoveHandler = (id) =>{
+        cartCtx.removeItem(id);
+    }
+    const cartItemAddHandler = item => {
+        cartCtx.addItem({...item,amount:1})
+    }
 
         const cartItems = (
         <ul className={classes['cart-items']}>
@@ -24,19 +29,23 @@ const Cart = (props) =>{
             name={item.name} 
             amount={item.amount} 
             price={item.price} 
-            onRemove={cartItemRemoveHandler.bind(null, item.id)}/>
+            onRemove={cartItemRemoveHandler.bind(null, item.id)}
+            onAdd = {cartItemAddHandler.bind(null, item)}/>
             ))}
         </ul>);
         
     return (
     <CartModal onClose={props.onClose}>
-        {cartItems}
-        <div className={classes.total}>
-            <span>Sneakers</span>
-            <span>$125 x 3 </span><span>{totalAmount}</span>
-            <img src={iconDelete} alt='delete icon'/>
+        <div>Cart</div>
+        <hr></hr>
+        {!hasItems && <div>
+        
+        <div>No items in the basket</div>
         </div>
-        {hasItems && <Button className={classes.addBtn} onClose={props.onClose}>Checkout</Button>}
+        }
+        {cartItems}
+        {hasItems &&     
+        <Button className={classes.addBtn} onClose={props.onClose}>Checkout</Button>}
     </CartModal>
     );
 }
