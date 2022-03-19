@@ -20,9 +20,11 @@ const Header = (props) =>{
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <HeaderCartButton onClick={props.onShowCart}/>
-                <div className={classes.avatarimage}>
-                <img src={avatarImage} alt='user face'/>
+                <div className={classes.iconwrapper}>
+                    <HeaderCartButton onClick={props.onShowCart}/>
+                    <div className={classes.avatarimage}>
+                    <img src={avatarImage} alt='user face'/>
+                    </div>
                 </div>
             </header>
         </Fragment>

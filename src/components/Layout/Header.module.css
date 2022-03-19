@@ -2,9 +2,9 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items:center;
-    /* height: 110px; */
+    width: 100%;
     top: 0;
     padding-left: 5px;
     padding-right: 5px;
@@ -22,19 +22,23 @@
     display: none;
 }
 
+.iconwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .avatarimage img{
-    object-fit:contain;
+    /* object-fit:contain; */
     width: 100%;
     height: 100%;
-    align-content: center;
+    /* align-content: center;
     justify-content: center;
     position: relative;
-    padding-left: 10px;
+    padding-left: 10px; */
 }
 
 .avatarimage {
-    width:35px;
-    height: 35px;
+    width: 40px;
     position: relative;
 }
 

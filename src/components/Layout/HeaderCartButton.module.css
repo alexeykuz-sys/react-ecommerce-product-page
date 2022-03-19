@@ -3,8 +3,8 @@
     background: none;
     border: 0;
     position: relative;
-    padding-left: 40px;
-    padding-right: 5px;
+    /* padding-left: 40px;
+    padding-right: 5px; */
 }
 
 .carticon{
@@ -15,6 +15,7 @@
 .badge {
     position: absolute;
     right: 4px;
+    top: -8px;
     font-size: 14px;
     color: red;
     background-color:var(--paleOrange);
